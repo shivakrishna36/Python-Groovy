@@ -1,0 +1,71 @@
+1.public class Demo {
+    public static void main(String args[]) {
+        System.out.println("Hello World");
+    }
+}
+output:
+Hello World
+
+2. def name = 'Guillaume' // a plain string
+    def greeting = "Hello ${name}"
+
+   assert greeting.toString() == 'Hello Guillaume'
+
+3.def numbers = [1: 'one', 2: 'two']
+
+assert numbers[1] == 'one'
+
+4.public class Demo {
+    public static void main(String args[]) {
+        for (int x = 0; x <= 5; x=x+2) {
+            println x;
+        }
+    }
+}
+output:
+0
+2
+4
+
+5. def y = ["java", "is", "Best", "for", "Groovy"]
+println y
+y.add("Learning")
+println(y.contains("is"))
+println(y.get(2))
+println(y.pop())
+
+output:
+[java,is, Best, for, Groovy]
+true
+Best
+Learning
+
+6.def y = [fName:'Jen', lName:'Cruise', sex:'F']
+print y.get("fName")
+output:
+Jen
+
+7. def myClosure = {
+       println "My First Closure"	
+}
+myClosure()
+output:
+My First Closure
+
+8.def myClosure = {
+       a,b,c->
+       y = a+b+c
+       println y
+}
+myClosure(1,2,3)
+output:
+6
+
+9.int fib(int n) {
+    n < 2 ? 1 : fib(n-1) + fib(n-2)
+}
+assert fib(10)==89
+
+10.int x = 1
+int y = 2
+assert x+y == 3
